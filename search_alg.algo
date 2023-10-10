@@ -1,0 +1,16 @@
+ALGORITHM Insertion_sort
+VAR
+  tab : ARRAY_OF INTEGER[n];
+  n,a,b : INTEGER;
+BEGIN
+    FOR i FROM 0 TO n-1 STEP i++  DO
+        b := tab[i]
+        a := i
+
+        WHILE (a>0 and tab[a-1]>b)
+        tab[a] = tab[a-1]
+        a=a-1
+        END_WHILE
+        tab[a]=b
+    END_FOR
+END
